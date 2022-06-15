@@ -43,7 +43,7 @@ class TwitterClientTest {
 
     @Test
     void test_searchStream()  {
-        int hitCountLimit = 10;
+        int hitCountLimit = 100;
         int waitThresholdInSeconds = 30;
         SearchResponse response = client.searchStream(waitThresholdInSeconds, hitCountLimit);
         resultStream.println(response);
